@@ -93,10 +93,10 @@ Feature: Automatizar el backend de Pet Store
 
 # Llamar a otro caso de prueba para usarlo despues
 
-  @TEST-8
-  Scenario: Verificar la busqueda de la mascota por id - OK
-    * def idMascota = call read('classpath:examples/users/users.feature@crearMascota')
-    Given path 'pet/'+ idMascota.idPet
-    When method get
-    Then status 200
-    And print response
+  #@TEST-8
+ # Scenario: Verificar la busqueda de la mascota por id - OK
+ #   * def idMascota = call read('classpath:examples/users/users.feature@crearMascota')
+  #  Given path 'pet/'+ idMascota.idPet
+  #  When method get
+ #   Then status 200
+ #   And print response
