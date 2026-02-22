@@ -1,0 +1,26 @@
+17:34:54.539 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @TEST-8
+17:34:54.634 [main] INFO  com.intuit.karate.Runner - using system property 'karate.env': dev
+17:34:54.748 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:34:55.964 [main] INFO  com.intuit.karate - karate.env system property was: dev 
+17:34:56.034 [main] INFO  c.intuit.karate.core.FeatureRuntime - classpath:examples/users/users.feature - call by tag at line 9: crearMascota
+17:34:56.049 [main] ERROR com.intuit.karate - classpath:examples/users/users.feature:4
+* url apiPetStore
+js failed:
+>>>>
+01: apiPetStore
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "apiPetStore" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:examples/users/users.feature:4
+17:34:56.056 [main] ERROR com.intuit.karate - classpath:examples/users/users.feature:98
+* def idMascota = call read('classpath:examples/users/users.feature@crearMascota')
+js failed:
+>>>>
+01: apiPetStore
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "apiPetStore" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:examples/users/users.feature:4
+classpath:examples/users/users.feature:98
